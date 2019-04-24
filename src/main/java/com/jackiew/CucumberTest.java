@@ -41,6 +41,7 @@ public class CucumberTest {
 //       B: String[] cucumberOptions = {"-g", "com.jackiew","classpath:features/test/is_it_friday_yet.feature:4","classpath:features/test/it_friday_yet.feature:59"};
         String[] cucumberOptions = {"-g", "com.jackiew", "-p", "json:target/report.json", "-n", "Monday isn't Friday", "-n", "Tuesday is Not Friday11", "classpath:features"};
         byte status = -1;
+        System.out.println("make some change here");
         try {
             status = CucumberStaticRunner.startTests(cucumberOptions);
         } catch (Throwable throwable) {
